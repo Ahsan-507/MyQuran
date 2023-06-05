@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
 
-                intent.putExtra("txt",no);
+                intent.putExtra("txt",stInd);
                 int lastAyatCount;
                 if(position == 0){
                     lastAyatCount = (stInd+(qd.surahAyatCount[position])-1);
@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 String lastno = Integer.toString(lastAyatCount);
                 intent.putExtra("lxt",lastno);
+
                 startActivity(intent);
             }
         });
