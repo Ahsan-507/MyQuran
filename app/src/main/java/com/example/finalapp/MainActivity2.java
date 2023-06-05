@@ -25,8 +25,8 @@ public class MainActivity2 extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        String passedArg = intent.getStringExtra("txt");
-        String passedLastArg = intent.getStringExtra("lxt");
+        String passedArg = intent.getStringExtra("firstIndex");
+        String passedLastArg = intent.getStringExtra("lastIndex");
 
         int surahNo = Integer.parseInt(passedArg);
 
